@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documents with Recycle Bin</title>
 
-    <!-- Tailwind CSS -->
+   
     <script src="https://cdn.tailwindcss.com"></script>
 
   
@@ -14,7 +14,7 @@
 <body class="bg-gray-100 min-h-screen flex flex-col items-center p-4">
     <div class="w-full max-w-md bg-white p-6 rounded-xl shadow-md">
         
-        <!-- Header -->
+      
         <header class="flex justify-between items-center">
             <a href="home(d).html">
                 <button class="text-gray-500 text-xl btn">&larr;</button>
@@ -24,21 +24,21 @@
             <button class="p-2 bg-gray-200 rounded-full hover:bg-gray-300">🔔</button>
         </header>
         
-        <!-- Upload Section -->
+       
         <div class="mt-4 flex justify-between items-center bg-teal-500 text-white p-4 rounded-lg">
             <h2 class="text-lg font-bold">Manage Your Documents</h2>
         </div>
         
-        <!-- Documents List -->
+     
         <div class="mt-4" id="documents-list"></div>
 
-        <!-- Recycle Bin Section -->
+      
         <div class="mt-6 p-4 bg-gray-200 rounded-lg">
             <h2 class="text-lg font-bold text-gray-700">🗑 Recycle Bin</h2>
             <div id="recycle-bin-list" class="mt-2"></div>
         </div>
 
-        <!-- Custom Right Click Menu -->
+      
         <div id="context-menu" class="context-menu">
             <button onclick="downloadDocument()">📥 Download</button>
             <button onclick="moveToRecycleBin()">🗑️ Move to Recycle Bin</button>
