@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <meta charset="UTF-8" />
+  <!-- Viewport meta tag for mobile responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stats Page</title>
+<script src="stats.js"></script>
+<link rel="stylesheet" href="stats.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- TOP NAVIGATION WITH BACK ARROW & NOTIFICATION BUTTON -->
+    <div class="top-nav">
+      <!-- Back arrow button; clicking goes back in history -->
+      <a href="home.html">
+        <button class="text-gray-500 text-xl btn">&larr;</button>
+    </a>
+<h1>Stats</h1>
+
+    <a href="notification.html">
+      <button id="notifBtn">&#128276;</button>
+    </a>
+    </div>
+
+    <!-- QUICK STATS CARDS -->
+    <div class="quick-stats">
+      <div class="stat-card">
+        <h6 style="color: gray;">Today</h6><br>
+        <h2>Appointments</h2>
+        <div class="count" id="appointmentsCount">0</div>
+        <div class="bar-chart" id="appointmentsChart"></div>
+      </div>
+      <div class="stat-card">
+        <h6 style="color: gray;">Today</h6><br>
+        <h2>Pending Appt</h2>
+        <div class="count" id="pendingCount">0</div>
+        <div class="bar-chart" id="pendingChart"></div>
+      </div>
+      <div class="stat-card">
+        <h6 style="color: gray;">Today</h6><br>
+        <h2>Earnings</h2>
+        <div class="count" id="earningsCount">0</div>
+        <div class="bar-chart" id="earningsChart"></div>
+      </div>
+      <div class="stat-card">
+        <h6 style="color: gray;">Today</h6><br>
+        <h2>Patients</h2>
+        <div class="count" id="patientsCount">0</div>
+        <div class="bar-chart" id="patientsChart"></div>
+      </div>
+    </div>
+
+    <!-- MAIN STATS SECTION -->
+    <div class="stats-section">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h2 id="ii">STATS</h2>
+        <h2 id="ii">Default</h2>
+      </div>
+      <h6 style="color: gray;">Patients</h6><br>
+      <h2>Total patients</h2>
+      <div class="main-chart" id="patientsMainChart"></div>
+    </div>
+  </div>
+
+  
+</body>
+</html>

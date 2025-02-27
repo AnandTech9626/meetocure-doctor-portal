@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetocure App</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="appoint.css">
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen p-4">
+    <div class="app-container">
+        <!-- Header -->
+        <header class="flex justify-between items-center">
+            <a href="home(d).html">
+                <button class="text-gray-500 text-xl btn">&larr;</button>
+            </a>
+            <h1 class="text-xl font-semibold text-blue-900">Appointments</h1>
+        
+            <button class="p-2 bg-gray-200 rounded-full hover:bg-gray-300">🔔</button>
+        </header>
+        
+        
+
+        <!-- Appointments Section -->
+        <div class="flex justify-between items-center mt-4">
+            <h2 class="text-lg font-semibold">Today</h2>
+            <button class="bg-teal-600 text-white px-3 py-1 rounded-md hover:bg-teal-700">See All</button>
+        </div>
+        
+        <div id="appointments"></div>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item"><i class="fas fa-home"></i></a>
+            <a href="#" class="nav-item"><i class="fas fa-calendar-alt"></i></a>
+            <a href="#" class="nav-item"><i class="fas fa-user"></i></a>
+        </nav>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="appoint.js"></script>
+</body>
+</html>
