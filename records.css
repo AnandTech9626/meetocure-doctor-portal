@@ -1,5 +1,5 @@
 
-/* Fade-in animation */
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
@@ -11,7 +11,7 @@
 .doc-item:hover {
     background: rgba(0, 0, 0, 0.05);
 }
-/* Custom Right Click Menu */
+
 .context-menu {
     position: absolute;
     background: white;
