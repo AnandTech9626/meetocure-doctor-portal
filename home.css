@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.notification-icon {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.search-bar {
+    display: flex;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-bar i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner {
+    display: none;
+    align-items: center;
+    background: #62a4ab;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.banner img {
+    width: 80px;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+.banner.active {
+    display: flex;
+}
+
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category {
+    background: #e3f2fd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.category i {
+    font-size: 20px;
+    color: #007bff;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 -2px 5px #ddd;
+    color: black;
+}
+.doctors h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.doctor-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.doctor-card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ddd;
+    text-align: center;
+    min-width: 150px;
+}
+
+.doctor-card img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.doctor-card h4 {
+    font-size: 14px;
+    margin: 8px 0 4px;
+}
+
+.doctor-card p {
+    font-size: 12px;
+    color: #555;
+    margin: 0;
+}
+
+.doctor-card span {
+    font-size: 12px;
+    color: #777;
+}
+

@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F9FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.container {
+    width: 375px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.back-btn, .notif-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.notif-icon {
+    position: relative;
+}
+
+.notif-icon .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.profile-info span {
+    display: block;
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.edit-icon {
+    position: relative;
+    top: -30px;
+    left: 35px;
+    background: #0084FF;
+    padding: 6px;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.menu {
+    margin-top: -20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px;
+    font-size: 13px;
+    cursor: pointer;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.menu-item i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: black;
+}
+
+.menu-item:hover {
+    background: #F1F1F1;
+}

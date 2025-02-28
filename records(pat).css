@@ -1,0 +1,36 @@
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+    animation: fadeIn 0.3s ease-in-out forwards;
+    opacity: 0;
+}
+.doc-item:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+/* Custom Right Click Menu */
+.context-menu {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: none;
+    z-index: 1000;
+}
+.context-menu button {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.context-menu button:hover {
+    background: #f3f3f3;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Booking</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="appointment.css"> <!-- Link to external CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert2 -->
+</head>
+<body>
+    <div class="container">
+        <h2>Doctor Details</h2>
+        <h3>Working Time</h3>
+        <input type="text" id="calendar" placeholder="Select Date">
+        <h3>Select Hour</h3>
+        <div class="time-grid" id="time-grid"></div>
+        <button class="confirm-button" id="confirm-btn">Confirm</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="appointment.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>

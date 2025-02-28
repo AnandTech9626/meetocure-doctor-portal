@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86vh;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.mobile-frame {
+    width: 300px;
+    height: 500px;
+    background: #0f4c5c;
+    border-radius: 25px;
+    padding: 20px;
+    position: absolute;
+    top: 20px;
+}
+
+.app-screen {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.input-box input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.input-box input:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(16, 145, 149, 0.6);
+}
+
+.find-results {
+    width: 100%;
+    background: #0f4c5c;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.welcome-card {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 20px;
+}
+
+.logo {
+    font-size: 40px;
+    background: linear-gradient(to bottom, #395A7F, #1C3D4A);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.role-btn {
+    width: 100%;
+    background: hsl(192, 68%, 36%);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.role-btn:hover {
+    background: #0d3b4a;
+}
+
+.location-select {
+    width: 8%;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+}
