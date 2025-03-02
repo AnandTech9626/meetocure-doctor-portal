@@ -2,9 +2,9 @@ body {
     font-family: Arial, sans-serif;
     background: #f4f4f4;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    height: 86vh;
+    height: 100vh;
     margin: 0;
     flex-direction: column;
     text-align: center;
@@ -12,13 +12,18 @@ body {
 }
 
 .mobile-frame {
-    width: 300px;
-    height: 500px;
+    width: 90%;
+    max-width: 350px;
+    height: 90vh;
+    max-height: 800px;
     background: #0f4c5c;
     border-radius: 25px;
     padding: 20px;
-    position: absolute;
-    top: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Add spacing between child elements */
 }
 
 .app-screen {
@@ -26,16 +31,23 @@ body {
     padding: 15px;
     border-radius: 15px;
     text-align: center;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.input-box {
+    width: 100%;
 }
 
 .input-box input {
-    width: 80%;
-    padding: 10px;
+    width: 90%;
+    padding: 12px;
     margin: 10px 0;
     border-radius: 25px;
     border: 1px solid #ddd;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out;
+    font-size: 16px;
 }
 
 .input-box input:focus {
@@ -48,20 +60,25 @@ body {
     background: #0f4c5c;
     color: white;
     border: none;
-    padding: 12px;
+    padding: 14px;
     border-radius: 25px;
     cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .welcome-card {
     background: white;
-    width: 300px;
+    width: 90%;
+    max-width: 280px;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .logo {
@@ -76,10 +93,11 @@ body {
     background: hsl(192, 68%, 36%);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 12px;
     margin: 5px 0;
     border-radius: 25px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .role-btn:hover {
@@ -87,9 +105,35 @@ body {
 }
 
 .location-select {
-    width: 8%;
-    padding: 5px;
+    width: 100%;
+    max-width: 120px;
+    padding: 8px;
     margin: 5px 0;
     border-radius: 25px;
     border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* Ensure the page is fully responsive */
+@media screen and (max-width: 480px) {
+    .mobile-frame {
+        width: 95%;
+        height: auto;
+        max-height: 80vh;
+    }
+
+    .input-box input,
+    .find-results,
+    .role-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 32px;
+    }
+
+    .welcome-card {
+        width: 95%;
+    }
 }
